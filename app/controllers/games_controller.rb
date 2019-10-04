@@ -7,7 +7,7 @@ class GamesController < ApplicationController
   end
 
   def show
-    @game = Game.find_by(id: params["game.id"])
+    @game = Game.find_by(id: params[id: game.id])
   end
 
   def update
