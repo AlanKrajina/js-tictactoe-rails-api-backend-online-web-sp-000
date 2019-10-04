@@ -6,6 +6,18 @@ class GamesController < ApplicationController
     render json: @game, status: 201
   end
 
+  def show
+
+  end
+
+  def update
+
+  end
+
+  def index
+
+  end
+
   private
 
   def game_params
