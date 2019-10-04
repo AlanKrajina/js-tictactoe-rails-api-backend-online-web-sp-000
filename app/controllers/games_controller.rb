@@ -6,6 +6,7 @@ class GamesController < ApplicationController
 #    binding.pry
     test2 = @test["state"]
     @game = JSON.parse(test2)
+    binding.pry
     render json: @game, status: 201
   end
 
