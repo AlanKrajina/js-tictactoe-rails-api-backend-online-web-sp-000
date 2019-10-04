@@ -13,7 +13,8 @@ class GamesController < ApplicationController
   end
 
   def update
-
+    @game = Game.find_by(id: params["id"])
+    @game.update(game_params)
   end
 
   def index
