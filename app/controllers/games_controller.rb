@@ -3,7 +3,9 @@ class GamesController < ApplicationController
 
   def create
     @game = Game.create(game_params)
-    binding.pry
+#    binding.pry
+#    test = @game["state"]
+#    obj = JSON.parse(test)
     render json: @game, status: 201
   end
 
