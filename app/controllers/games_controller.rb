@@ -8,7 +8,7 @@ class GamesController < ApplicationController
 
   def show
     binding.pry
-    @game = Game.find_by(id: params[game][:id])
+    @game = Game.find_by(id: params["id"]
   end
 
   def update
