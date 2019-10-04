@@ -9,6 +9,7 @@ class GamesController < ApplicationController
   def show
   #  binding.pry
     @game = Game.find_by(id: params["id"])
+    render json: @game, status: 201
   end
 
   def update
